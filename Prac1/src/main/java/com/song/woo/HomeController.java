@@ -42,7 +42,7 @@ public class HomeController {
 		
 		Date today = new Date();//현재날짜
 		SimpleDateFormat date =new SimpleDateFormat("yyyy-MM-dd");//현재날짜를 년-월-일 형태로 변경
-		SimpleDateFormat time =new SimpleDateFormat("HH24:mm:ss");//현재날짜를 시:분:초 형태로 변경
+		SimpleDateFormat time =new SimpleDateFormat("HH:mm:ss");//현재날짜를 시:분:초 형태로 변경
 //		System.out.println(date.toString());
 //		System.out.println(time.toString());
 		

@@ -26,7 +26,6 @@ function test(){//
 }
 </script>
 <body>
-${a}
 	<h1>1일차 과제</h1>
 	<div id="time"></div>
 	<input type="button" value="시작" onclick="test()">
