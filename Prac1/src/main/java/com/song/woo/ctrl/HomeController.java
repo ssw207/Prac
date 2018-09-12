@@ -35,13 +35,12 @@ public class HomeController {
 	@RequestMapping(value = "/home.do", method = RequestMethod.GET)
 	public String move(Locale locale, Model model ) {
 		logger.info("Welcome home! The client locale is {}.", locale);
-		String a="아이고";
-		model.addAttribute("a",a);
+
 		return "home";
 	}
 	
 	
-	@RequestMapping(value = "/watch.do",produces = "application/text; charset=utf8", method = RequestMethod.GET)//주소만 보내므로 get방식으로 통신,produeces사용하여 Http헤더의 컨텐트타입을 utf-8로 변경
+	@RequestMapping(value = "/watch.do", produces = "application/text; charset=utf8", method = RequestMethod.GET)//주소만 보내므로 get방식으로 통신,produeces사용하여 Http헤더의 컨텐트타입을 utf-8로 변경
 	@ResponseBody//return값을 ajax로 처리하기위해 선언 
 	public String watch(){//입력값이 없으므로 파라미터 선언하지 않음
 		String result=service.watch();

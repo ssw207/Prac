@@ -1,6 +1,5 @@
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
-<%-- <% request.setCharacterEncoding("utf-8"); %> --%>
-<%-- <% response.setContentType("text/html; charset=utf-8"); %> --%>
+<% request.setCharacterEncoding("utf-8"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +22,6 @@ function test(){
 	}, 1000);//1초간격으로 반복
 
 }
-
 
 </script>
 <body>
